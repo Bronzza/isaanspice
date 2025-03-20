@@ -1,0 +1,86 @@
+## AI Prompt: Generate Website Structure and Design Guidelines with CSS Nullification, Flexbox, Grid (Menu), and BEM
+
+**Task:** Create a detailed plan for a restaurant business card website, "Jim Joom Restaurant," specializing in Issaan cuisine.
+
+**Output:**
+
+1.  **HTML Structure:** Provide a hierarchical outline of the HTML elements, reflecting the website's sections (header, intro, about, menu, testimonials, footer).
+2.  **CSS/SCSS Guidelines:**
+    * **Include the following CSS nullification script at the beginning of the generated CSS/SCSS:**
+        ```css
+        /* Nullify */
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        *,*:before,*:after{
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        :focus,:active{outline: none;}
+        a:focus,a:active{outline: none;}
+
+        header,nav,footer,aside{display: block;}
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-size: 100%;
+            line-height: 1;
+            font-size: 14px;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            scroll-behavior: smooth;
+            position: absolute;
+        }
+        input,button,textarea{font-family:inherit;}
+
+        input::-ms-clear{display: none;}
+        button{cursor: pointer;}
+        button::-moz-focus-inner {padding:0;border:0;}
+        a, a:visited{text-decoration: none;}
+        a:hover{text-decoration: none;}
+        ul li{list-style: none;}
+        img{vertical-align: top;}
+
+        h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+        /*--------------------*/
+        ```
+    * Specify the use of SCSS and Prepros (free tier).
+    * Define the main color scheme (#F5F5DC and #228B22, adaptable).
+    * Implement a mobile-first approach, detailing how design properties (sizes, fonts, layout) should adapt for different screen sizes.
+    * Create a plan for utilizing scss includes for header and footer.
+    * **Use flexbox for the primary layout of the website.**
+    * **Utilize CSS Grid specifically for the menu section.**
+    * **Implement the BEM (Block Element Modifier) methodology for CSS class naming.**
+3.  **JavaScript Functionality:** Outline the required JavaScript interactions, including:
+    * A responsive menu system.
+    * A photo carousel in the "About Us" section.
+    * A video background for the invitational screen.
+4.  **Content and Design Elements:**
+    * Invitational Screen: Implement a full-screen background video with an overlay containing the restaurant's name, a "Call Us" button, and a Google Maps pointer. (Refer to link 1: https://tsarske.kiev.ua/en/ for video implementation inspiration).
+    * Menu Section: Display 9-10 main dishes using CSS Grid, with a link to a separate "All Menu" subdomain page.
+    * "All Menu" Subdomain: Maintain consistent styling (header, footer) with individual dish entries (picture, description, price) and a "Back to Main" button.
+    * Testimonials: Implement a section to showcase customer reviews.
+    * Footer: Include Google Maps link, working hours, and social media links.
+5.  **Overall Structure:** Follow the general structure of link 2: https://mslamai-rental.com/ as a structural guide.
+6.  **Mobile First:** All styles and structure must be designed with mobile first methodology.
+
+**Constraints:**
+
+* Utilize HTML, SCSS, and JavaScript.
+* Design for mobile-first responsiveness.
+* Maintain a clean and professional aesthetic.
+* Use Prepros free tier for scss compilation.
+* **Ensure the provided CSS nullification script is included at the beginning of the CSS/SCSS output.**
+* **Use flexbox for the main layout.**
+* **Use CSS Grid for the menu section.**
+* **Implement BEM methodology for CSS class naming.**
+
+**Examples:**
+
+* Inspirational video background: https://tsarske.kiev.ua/en/
+* Inspirational site structure: https://mslamai-rental.com/

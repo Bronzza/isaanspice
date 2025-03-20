@@ -1,0 +1,28 @@
+@import '_nullify';
+@import '_variables';
+
+// Base styles
+.page {
+    font-family: $font-primary;
+    color: $color-text;
+    
+    &__container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 $spacing-unit * 2;
+        
+        @media (min-width: $breakpoint-tablet) {
+            padding: 0 $spacing-unit * 4;
+        }
+    }
+}
+
+// Component imports
+@import '_header';
+@import '_hero';
+@import '_menu';
+@import '_about';
+@import '_testimonials';
+@import '_footer';
+@import '_full-menu'; 

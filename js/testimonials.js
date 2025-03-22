@@ -55,7 +55,7 @@ class TestimonialsCarousel {
             const item = document.createElement('div');
             item.className = 'testimonials__item';
             item.innerHTML = `
-                <p class="testimonials__text">${testimonial.text}</p>
+                <p class="testimonials__text text">${testimonial.text}</p>
                 <div class="testimonials__author">
                     <img src="${testimonial.avatar}" alt="${testimonial.author}" class="testimonials__avatar">
                     <span class="testimonials__name">${testimonial.author}</span>

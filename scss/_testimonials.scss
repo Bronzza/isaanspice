@@ -27,6 +27,7 @@
         gap: $spacing-unit * 3;
         overflow: hidden;
         flex: 1;
+        padding: $spacing-unit * 2 0; // Add padding to show top/bottom borders
         
         @media (min-width: $breakpoint-tablet) {
             grid-template-columns: repeat(3, 1fr);
@@ -37,14 +38,16 @@
         text-align: left;
         background: $color-light;
         padding: $spacing-unit * 3;
+        border: 1px solid rgba($color-primary, 0.2); // Add border
         border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); // Enhanced shadow
         opacity: 0;
         transform: translateX(100%);
         transition: all 0.5s ease;
         height: 100%;
         display: flex;
         flex-direction: column;
+        min-height: 200px; // Set minimum height for consistency
         
         &--active {
             opacity: 1;
@@ -59,7 +62,7 @@
         border-radius: 50%;
         background: transparent;
         color: $color-primary;
-        border: none;
+        border: 2px solid $color-primary;
         cursor: pointer;
         display: none;
         align-items: center;
@@ -76,33 +79,16 @@
             padding: 15px;
         }
 
+        &:hover {
+            background: $color-primary;
+            color: $color-light;
+            transform: scale(1.1);
+        }
+
         i {
             font-size: 1.2rem;
-            transition: color 0.3s ease;
             @media (min-width: $breakpoint-tablet) {
                 font-size: 1.5rem;
-            }
-        }
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: $color-primary;
-            border-radius: 50%;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: -1;
-        }
-
-        &:hover {
-            color: $color-light;
-
-            &::before {
-                opacity: 1;
             }
         }
 
@@ -120,12 +106,14 @@
         line-height: 1.6;
         margin-bottom: $spacing-unit * 2;
         color: $color-text;
+        flex-grow: 1; // Allow text to take remaining space
     }
 
     &__author {
         display: flex;
         align-items: center;
         gap: $spacing-unit * 2;
+        margin-top: auto; // Push author to bottom
     }
 
     &__avatar {

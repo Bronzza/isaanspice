@@ -1,7 +1,9 @@
 .footer {
     background: darken($color-primary, 10%);
     color: $color-light;
-    padding: $spacing-unit * 6 0;
+    padding: $spacing-unit * 3 0;
+    @include adaptive-value(padding-top, 32, 16, 0);
+    @include adaptive-value(padding-bottom, 32, 16, 0);
 
     &__container {
         display: grid;

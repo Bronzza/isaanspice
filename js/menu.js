@@ -15,6 +15,14 @@ const menuItems = [
         image: 'images/menu/laab-moo.jpg',
         alt: 'Spicy minced pork salad with fresh herbs'
     },
+    {
+        id: 3,
+        title: 'Kai Jeow',
+        description: 'Thai-style omelet, often with minced pork or vegetables',
+        price: 14.99,
+        image: 'images/menu/kai-jeow-1.jpg',
+        alt: 'Thai-style omelet'
+    }
     // Add more menu items...
 ];
 
@@ -32,7 +40,7 @@ function renderMenuItems() {
                 class="menu__image">
             <div class="menu__content">
                 <h3 class="menu__title">${item.title}</h3>
-                <p class="menu__description">${item.description}</p>
+                <p class="menu__description text">${item.description}</p>
                 <span class="menu__price">$${item.price.toFixed(2)}</span>
             </div>
         `;

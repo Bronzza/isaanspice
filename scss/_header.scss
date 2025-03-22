@@ -5,29 +5,52 @@
     left: 0;
     background: rgba($color-light, 0.95);
     z-index: 100;
+    // height: 80px;
+    @include adaptive-value(height, 80, 70, 0);
 
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: $spacing-unit * 2;
+        height: 100%;
+        @include adaptive-value(padding, 30, 10, 0);
+    }
+
+    &__logo-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__logo-image {
+        @include adaptive-value(width, 80, 50, 0);
+        @include adaptive-value(height, 80, 50, 0);
+        max-height: 80px;
+    }
+
+    &__logo-text {
+        font-family: $font-secondary;
+        @include adaptive-value(font-size, 28, 20, 0);
+        color: $color-primary;
     }
 
     &__logo {
         font-family: $font-secondary;
-        font-size: 1.5rem;
+        font-size: 28px;
         color: $color-primary;
+        text-decoration: none;
     }
 
     &__nav {
-        display: none;
+        display: flex;
+        gap: 40px;
 
         @media (min-width: $breakpoint-tablet) {
             display: flex;
             gap: $spacing-unit * 3;
         }
 
-        @media (max-width: $breakpoint-tablet - 1px) {
+        @media (max-width: ($breakpoint-tablet - 1)) {
             position: fixed;
             top: 0;
             left: 0;
@@ -71,16 +94,27 @@
     }
 
     &__link {
+        font-size: 18px;
         color: $color-text;
         text-decoration: none;
-        transition: color 0.3s ease;
+        padding: 15px 30px;
+        @include adaptive-value(padding-left, 25, 8, 0);
+        @include adaptive-value(padding-right, 25, 8, 0);
+        border-radius: 4px;
+        transition: all 0.3s ease;
 
         &:hover {
-            color: $color-primary;
+            background-color: darken($color-primary, 5%);
+            color: lighten($color-light, 5%);
         }
 
         &--active {
             color: $color-primary;
+            
+            &:hover {
+                background-color: darken($color-primary, 5%);
+                color: $color-light;
+            }
         }
     }
 
@@ -90,6 +124,7 @@
         height: 20px;
         cursor: pointer;
         z-index: 100;
+        @include adaptive-value(margin-right, 5, 25, 0);
 
         span, 
         &::before,

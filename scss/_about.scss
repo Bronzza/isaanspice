@@ -1,5 +1,7 @@
 .about {
     padding: $spacing-unit * 8 0;
+    @include adaptive-value(padding-top, 32, 16, 0);
+    @include adaptive-value(padding-bottom, 32, 16, 0);
     background: $color-secondary;
 
     &__container {

@@ -1,0 +1,37 @@
+<section id="testimonials" class="testimonials">
+        <div class="testimonials__container page__container">
+            <h2 class="testimonials__title">What Our Guests Say</h2>
+            <div class="testimonials__grid">
+                <div class="testimonials__item">
+                    <p class="testimonials__text">
+                        "The most authentic Issaan food I've had outside of Thailand. 
+                        The som tam is perfectly spiced!"
+                    </p>
+                    <div class="testimonials__author">
+                        <img src="images/avatars/avatar-1.jpg" alt="John D." class="testimonials__avatar">
+                        <span class="testimonials__name">John D.</span>
+                    </div>
+                </div>
+                <div class="testimonials__item">
+                    <p class="testimonials__text">
+                        "Their Gai Yang is absolutely fantastic! The perfect balance of 
+                        flavors and the chicken is always perfectly cooked."
+                    </p>
+                    <div class="testimonials__author">
+                        <img src="images/avatars/avatar-2.jpg" alt="Sarah M." class="testimonials__avatar">
+                        <span class="testimonials__name">Sarah M.</span>
+                    </div>
+                </div>
+                <div class="testimonials__item">
+                    <p class="testimonials__text">
+                        "Finally found authentic Issaan cuisine in the city! The Tom Saep 
+                        brings me right back to Thailand."
+                    </p>
+                    <div class="testimonials__author">
+                        <img src="images/avatars/avatar-3.jpg" alt="Mike R." class="testimonials__avatar">
+                        <span class="testimonials__name">Mike R.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,87 +1,148 @@
 const fullMenuItems = [
     // Appetizers
     {
-        id: 1,
-        title: 'Som Tam Thai',
-        description: 'Spicy green papaya salad with peanuts and dried shrimp',
-        price: 12.99,
-        image: 'images/menu/som-tam.jpg',
-        category: 'Appetizers'
+        "id": 1,
+        "title": "Spring Roll",
+        "description": "Crispy fried spring rolls filled with vegetables and served with sweet chili sauce.",
+        "price": 80,
+        "image": "images/menu/spring-roll.jpg",
+        "category": "Appetizers"
     },
     {
-        id: 2,
-        title: 'Laab Moo',
-        description: 'Spicy minced pork salad with herbs and roasted rice powder',
-        price: 14.99,
-        image: 'images/menu/laab-moo.jpg',
-        category: 'Appetizers'
+        "id": 2,
+        "title": "Chicken Satay",
+        "description": "Grilled marinated chicken skewers served with peanut sauce.",
+        "price": 100,
+        "image": "images/menu/chicken-satay.jpg",
+        "category": "Appetizers"
     },
     {
-        id: 3,
-        title: 'Nam Tok',
-        description: 'Grilled beef salad with roasted rice powder and fresh herbs',
-        price: 15.99,
-        image: 'images/menu/nam-tok.jpg',
-        category: 'Appetizers'
-    },
-    // Main Courses
-    {
-        id: 4,
-        title: 'Gai Yang',
-        description: 'Grilled marinated chicken with sweet chili sauce',
-        price: 18.99,
-        image: 'images/menu/gai-yang.jpg',
-        category: 'Main Courses'
+        "id": 3,
+        "title": "Crispy Fried Shrimps",
+        "description": "Golden crispy battered shrimp served with dipping sauce.",
+        "price": 120,
+        "image": "images/menu/crispy-fried-shrimps.jpg",
+        "category": "Appetizers"
     },
     {
-        id: 5,
-        title: 'Tom Saep',
-        description: 'Spicy and sour pork rib soup with herbs',
-        price: 16.99,
-        image: 'images/menu/tom-saep.jpg',
-        category: 'Main Courses'
+        "id": 4,
+        "title": "Crispy Fried Calamari",
+        "description": "Deep-fried calamari rings with a crunchy coating, served with sauce.",
+        "price": 120,
+        "image": "images/menu/crispy-fried-calamari.jpg",
+        "category": "Appetizers"
     },
     {
-        id: 6,
-        title: 'Pad Kra Pao',
-        description: 'Stir-fried holy basil with minced pork and fried egg',
-        price: 17.99,
-        image: 'images/menu/pad-kra-pao.jpg',
-        category: 'Main Courses'
-    },
-    // Desserts
-    {
-        id: 7,
-        title: 'Mango Sticky Rice',
-        description: 'Sweet sticky rice with fresh mango and coconut cream',
-        price: 9.99,
-        image: 'images/menu/mango-sticky-rice.jpg',
-        category: 'Desserts'
+        "id": 5,
+        "title": "Chicken Nuggets",
+        "description": "Crunchy bite-sized chicken pieces, perfect for snacking.",
+        "price": 80,
+        "image": "images/menu/chicken-nuggets.jpg",
+        "category": "Appetizers"
     },
     {
-        id: 8,
-        title: 'Tub Tim Grob',
-        description: 'Water chestnut rubies in coconut milk',
-        price: 8.99,
-        image: 'images/menu/tub-tim-grob.jpg',
-        category: 'Desserts'
-    },
-    // Beverages
-    {
-        id: 9,
-        title: 'Thai Iced Tea',
-        description: 'Traditional Thai tea with cream',
-        price: 4.99,
-        image: 'images/menu/thai-tea.jpg',
-        category: 'Beverages'
+        "id": 6,
+        "title": "French Fries",
+        "description": "Crispy golden fries, lightly salted, served with ketchup.",
+        "price": 80,
+        "image": "images/menu/french-fries.jpg",
+        "category": "Appetizers"
     },
     {
-        id: 10,
-        title: 'Lemongrass Drink',
-        description: 'Refreshing iced lemongrass drink',
-        price: 4.99,
-        image: 'images/menu/lemongrass-drink.jpg',
-        category: 'Beverages'
+        "id": 7,
+        "title": "Fish Cake",
+        "description": "Thai-style fish cakes made with fragrant herbs and spices.",
+        "price": 80,
+        "image": "images/menu/fish-cake.jpg",
+        "category": "Appetizers"
+    },
+    {
+        "id": 8,
+        "title": "Shrimp Cake",
+        "description": "Delicious shrimp cakes with a crispy coating, served with sauce.",
+        "price": 120,
+        "image": "images/menu/shrimp-cake.jpg",
+        "category": "Appetizers"
+    },
+    {
+        "id": 9,
+        "title": "Mixed Vegetables Tempura",
+        "description": "Assorted fresh vegetables deep-fried in a light tempura batter.",
+        "price": 100,
+        "image": "images/menu/mixed-vegetables-tempura.jpg",
+        "category": "Appetizers"
+    },
+    {
+        "id": 10,
+        "title": "Fish and Chips",
+        "description": "Crispy battered fish fillet served with golden fries.",
+        "price": 150,
+        "image": "images/menu/fish-and-chips.jpg",
+        "category": "Appetizers"
+    },
+    {
+        "id": 11,
+        "title": "Crispy Chicken and Chips",
+        "description": "Deep-fried crispy chicken with a side of golden fries.",
+        "price": 150,
+        "image": "images/menu/crispy-chicken-and-chips.jpg",
+        "category": "Appetizers"
+    },
+    {
+        "id": 12,
+        "title": "Hot Basil Leaf",
+        "description": "Stir-fried basil leaves with your choice of protein, served with rice.",
+        "price": "90-120",
+        "image": "images/menu/hot-basil-leaf.jpg",
+        "category": "Thaifood"
+    },
+    {
+        "id": 13,
+        "title": "Mixed Vegetables in Oyster Sauce",
+        "description": "Stir-fried mixed vegetables in a savory oyster sauce.",
+        "price": 90,
+        "image": "images/menu/mixed-vegetables-oyster.jpg",
+        "category": "Thaifood"
+    },
+    {
+        "id": 14,
+        "title": "Thai Omelette",
+        "description": "Fluffy Thai-style omelette, crispy on the edges, served with rice.",
+        "price": 60,
+        "image": "images/menu/thai-omelette.jpg",
+        "category": "Thaifood"
+    },
+    {
+        "id": 15,
+        "title": "Morning Glory",
+        "description": "Traditional Thai stir-fried morning glory with garlic and chili.",
+        "price": 80,
+        "image": "images/menu/morning-glory.jpg",
+        "category": "Thaifood"
+    },
+    {
+        "id": 16,
+        "title": "Sweet Sauce Stir Fry",
+        "description": "Stir-fried vegetables and meat in a delicious sweet sauce.",
+        "price": "90-120",
+        "image": "images/menu/sweet-sauce-stir-fry.jpg",
+        "category": "Thaifood"
+    },
+    {
+        "id": 17,
+        "title": "Stir Fried Cashewnut",
+        "description": "Stir-fried chicken with crunchy cashew nuts and vegetables.",
+        "price": "90-120",
+        "image": "images/menu/stir-fried-cashewnut.jpg",
+        "category": "Thaifood"
+    },
+    {
+        "id": 18,
+        "title": "Stir Fried Pad Phik Curry",
+        "description": "Spicy stir-fried dish with curry paste and fresh vegetables.",
+        "price": "90-100",
+        "image": "images/menu/stir-fried-pad-phik-curry.jpg",
+        "category": "Thaifood"
     }
 ];
 
@@ -132,7 +193,7 @@ class FullMenu {
                 <div class="menu__content">
                     <h3 class="menu__title">${item.title}</h3>
                     <p class="menu__description">${item.description}</p>
-                    <span class="menu__price">$${item.price.toFixed(2)}</span>
+                    <span class="menu__price">$${item.price}</span>
                 </div>
             `;
             

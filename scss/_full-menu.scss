@@ -27,15 +27,22 @@
     }
 
     &__categories {
-        display: flex;
-        gap: $spacing-unit * 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $spacing-unit;
         margin-bottom: $spacing-unit * 4;
-        overflow-x: auto;
-        padding-bottom: $spacing-unit;
+        padding: $spacing-unit;
+        background: rgba($color-primary, 0.05);
+        border-radius: 8px;
         
         @media (min-width: $breakpoint-tablet) {
-            justify-content: center;
-            overflow-x: visible;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: $spacing-unit * 1.5;
+        }
+        
+        @media (min-width: $breakpoint-desktop) {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: $spacing-unit * 2;
         }
     }
 
@@ -47,6 +54,12 @@
         color: $color-primary;
         border-radius: 20px;
         transition: all 0.3s ease;
+        text-align: center;
+        font-size: 0.9rem;
+        
+        @media (min-width: $breakpoint-tablet) {
+            font-size: 1rem;
+        }
 
         &:hover {
             background: rgba($color-primary, 0.1);
@@ -55,6 +68,13 @@
         &--active {
             background: $color-primary;
             color: $color-light;
+        }
+
+        // Make "All" button full width on mobile
+        &:first-child {
+            @media (max-width: $breakpoint-tablet - 1) {
+                grid-column: 1 / -1;
+            }
         }
     }
 

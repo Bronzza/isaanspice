@@ -12,23 +12,7 @@
     </style>
 </head>
 <body class="page">
-    <header class="header">
-        <div class="header__container page__container">
-            <a href="#" class="header__logo-wrapper">
-                <img src="images/new_logo/Ariel.svg" alt="Jim Joom Logo" class="header__logo-image">
-                <span class="header__logo-text">Jim Joom</span>
-            </a>
-            <nav class="header__nav">
-                <a href="/#about" class="header__link">About</a>
-                <a href="/#menu" class="header__link header__link--active">Menu</a>
-                <a href="/#testimonials" class="header__link">Testimonials</a>
-                <a href="/#contact" class="header__link">Contact</a>
-            </nav>
-            <button class="header__burger" aria-label="Menu">
-                <span></span>
-            </button>
-        </div>
-    </header>
+    <div id="header-component"></div>
 
     <main class="full-menu">
         <div class="full-menu__container page__container">
@@ -53,10 +37,9 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <!-- Same footer as index.html -->
-    </footer>
+    <div id="footer-component"></div>
 
+    <script src="js/components.js"></script>
     <script src="js/fullMenu.js"></script>
     <script src="js/mobileMenu.js"></script>
     <script src="js/smoothScroll.js"></script>

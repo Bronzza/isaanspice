@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Menu - Jim Joom Restaurant</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
         .hero { background: url('images/hero/main_1.jpg') center/cover no-repeat; }
@@ -13,7 +14,10 @@
 <body class="page">
     <header class="header">
         <div class="header__container page__container">
-            <a href="/" class="header__logo">Jim Joom</a>
+            <a href="#" class="header__logo-wrapper">
+                <img src="images/new_logo/Ariel.svg" alt="Jim Joom Logo" class="header__logo-image">
+                <span class="header__logo-text">Jim Joom</span>
+            </a>
             <nav class="header__nav">
                 <a href="/#about" class="header__link">About</a>
                 <a href="/#menu" class="header__link header__link--active">Menu</a>
@@ -35,10 +39,12 @@
             
             <div class="full-menu__categories">
                 <button class="full-menu__category full-menu__category--active">All</button>
-                <button class="full-menu__category">Appetizers</button>
-                <button class="full-menu__category">Main Courses</button>
-                <button class="full-menu__category">Desserts</button>
-                <button class="full-menu__category">Beverages</button>
+                <button class="full-menu__category">Starters</button>
+                <button class="full-menu__category">Main Dishes</button>
+                <button class="full-menu__category">BBQ & Grills</button>
+                <button class="full-menu__category">Seafood</button>
+                <button class="full-menu__category">Vegetarian & Vegan</button>
+                <button class="full-menu__category">Desserts & Drinks</button>
             </div>
 
             <div class="full-menu__grid">

@@ -181,7 +181,7 @@ const fullMenuItems = [
         "description": "Marinated and grilled chicken skewers, served with peanut sauce.",
         "price": "120",
         "image": "images/menu/grilled-chicken-satay.jpg",
-        "category": "BBQ & Grilled Specialties"
+        "category": "BBQ & Grills"
     },
     {
         "id": 24,
@@ -189,7 +189,7 @@ const fullMenuItems = [
         "description": "Tender pork ribs slow-cooked and glazed with a rich BBQ sauce.",
         "price": "180",
         "image": "images/menu/bbq-pork-ribs.jpg",
-        "category": "BBQ & Grilled Specialties"
+        "category": "BBQ & Grills"
     },
     {
         "id": 25,
@@ -269,7 +269,7 @@ const fullMenuItems = [
         "description": "Juicy grilled beef skewers marinated in Thai spices.",
         "price": "150",
         "image": "images/menu/grilled-beef-skewers.jpg",
-        "category": "BBQ & Grilled Specialties"
+        "category": "BBQ & Grills"
     },
     {
         "id": 35,
@@ -344,142 +344,6 @@ const fullMenuItems = [
         "category": "Starters"
     },
     {
-        "id": 27,
-        "title": "Deep-Fried Sea Bass",
-        "description": "Crispy deep-fried whole sea bass topped with Thai-style sauce.",
-        "price": "250",
-        "image": "images/menu/deep-fried-sea-bass.jpg",
-        "category": "Seafood"
-    },
-    {
-        "id": 28,
-        "title": "Grilled Salmon with Herbs",
-        "description": "Fresh salmon fillet grilled with aromatic herbs and lemon butter sauce.",
-        "price": "220",
-        "image": "images/menu/grilled-salmon.jpg",
-        "category": "Seafood"
-    },
-    {
-        "id": 29,
-        "title": "Vegetable Stir-Fry",
-        "description": "Assorted fresh vegetables stir-fried with light soy sauce and garlic.",
-        "price": "100",
-        "image": "images/menu/vegetable-stir-fry.jpg",
-        "category": "Vegetarian & Vegan"
-    },
-    {
-        "id": 30,
-        "title": "Tofu with Basil",
-        "description": "Stir-fried tofu with Thai basil, chili, and soy sauce.",
-        "price": "110",
-        "image": "images/menu/tofu-with-basil.jpg",
-        "category": "Vegetarian & Vegan"
-    },
-    {
-        "id": 31,
-        "title": "Mango Sticky Rice",
-        "description": "Sweet sticky rice with ripe mango and coconut milk.",
-        "price": "90",
-        "image": "images/menu/mango-sticky-rice.jpg",
-        "category": "Desserts & Drinks"
-    },
-    {
-        "id": 32,
-        "title": "Thai Iced Tea",
-        "description": "Refreshing Thai-style iced tea with sweetened condensed milk.",
-        "price": "50",
-        "image": "images/menu/thai-iced-tea.jpg",
-        "category": "Desserts & Drinks"
-    },
-    {
-        "id": 33,
-        "title": "Coconut Ice Cream",
-        "description": "Creamy homemade coconut ice cream, served with peanuts and sticky rice.",
-        "price": "80",
-        "image": "images/menu/coconut-ice-cream.jpg",
-        "category": "Desserts & Drinks"
-    },
-    {
-        "id": 34,
-        "title": "Pad Thai",
-        "description": "Classic Thai stir-fried noodles with shrimp, tofu, and peanuts.",
-        "price": "120",
-        "image": "images/menu/pad-thai.jpg",
-        "category": "Main Dishes"
-    },
-    {
-        "id": 35,
-        "title": "Tom Yum Soup",
-        "description": "Spicy and sour Thai soup with shrimp, lemongrass, and lime leaves.",
-        "price": "130",
-        "image": "images/menu/tom-yum-soup.jpg",
-        "category": "Seafood"
-    },
-    {
-        "id": 36,
-        "title": "Papaya Salad",
-        "description": "Fresh shredded green papaya with chili, lime, and peanuts.",
-        "price": "90",
-        "image": "images/menu/papaya-salad.jpg",
-        "category": "Starters"
-    },
-    {
-        "id": 37,
-        "title": "Spicy Basil Chicken",
-        "description": "Stir-fried minced chicken with Thai basil and chili.",
-        "price": "120",
-        "image": "images/menu/spicy-basil-chicken.jpg",
-        "category": "Main Dishes"
-    },
-    {
-        "id": 38,
-        "title": "Fried Rice with Shrimp",
-        "description": "Thai-style fried rice with fresh shrimp and egg.",
-        "price": "130",
-        "image": "images/menu/fried-rice-shrimp.jpg",
-        "category": "Main Dishes"
-    },
-    {
-        "id": 39,
-        "title": "Chicken with Cashew Nuts",
-        "description": "Stir-fried chicken with crunchy cashews and dried chilies.",
-        "price": "130",
-        "image": "images/menu/chicken-cashew.jpg",
-        "category": "Main Dishes"
-    },
-    {
-        "id": 40,
-        "title": "BBQ Chicken Wings",
-        "description": "Marinated and grilled chicken wings with BBQ sauce.",
-        "price": "120",
-        "image": "images/menu/bbq-chicken-wings.jpg",
-        "category": "BBQ & Grilled Specialties"
-    },
-    {
-        "id": 41,
-        "title": "Grilled Pork Neck",
-        "description": "Tender grilled pork neck served with spicy dipping sauce.",
-        "price": "140",
-        "image": "images/menu/grilled-pork-neck.jpg",
-        "category": "BBQ & Grilled Specialties"
-    },
-    {
-        "id": 42,
-        "title": "Steamed Dumplings",
-        "description": "Homemade steamed dumplings filled with shrimp and pork.",
-        "price": "110",
-        "image": "images/menu/steamed-dumplings.jpg",
-        "category": "Starters"
-    },
-    {
-        "id": 43,
-        "title": "Glass Noodle Salad",
-        "description": "Spicy Thai salad with glass noodles, shrimp, and herbs.",
-        "price": "120",
-        "image": "images/menu/glass-noodle-salad.jpg",
-        "category": "Starters"
-    },
-    {
         "id": 44,
         "title": "Crispy Tofu",
         "description": "Deep-fried tofu with a crispy exterior, served with sweet chili sauce.",
@@ -501,7 +365,7 @@ const fullMenuItems = [
         "description": "Grilled beef skewers with Thai-style marinade.",
         "price": "150",
         "image": "images/menu/bbq-beef-skewers.jpg",
-        "category": "BBQ & Grilled Specialties"
+        "category": "BBQ & Grills"
     },
     {
         "id": 47,

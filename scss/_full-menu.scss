@@ -28,21 +28,45 @@
 
     &__categories {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: $spacing-unit;
         margin-bottom: $spacing-unit * 4;
         padding: $spacing-unit;
         background: rgba($color-primary, 0.05);
         border-radius: 8px;
         
+        @media (max-width: 540px) {
+            grid-template-columns: repeat(2, 1fr);
+            
+            .full-menu__category:first-child {
+                grid-column: 1 / -1;
+            }
+        }
+        
         @media (min-width: $breakpoint-tablet) {
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: $spacing-unit * 1.5;
         }
         
-        @media (min-width: $breakpoint-desktop) {
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        @media (min-width: 1050px) {
+            grid-template-columns: repeat(4, 1fr);
             gap: $spacing-unit * 2;
+            
+            .full-menu__category:first-child {
+                grid-column: auto;
+            }
+            
+            .full-menu__category:nth-child(5) {
+                grid-column: 1;
+            }
+            
+            .full-menu__category:nth-child(6) {
+                grid-column: 2;
+            }
+            
+            .full-menu__category:nth-child(7) {
+                grid-column: 3;
+            }
         }
     }
 

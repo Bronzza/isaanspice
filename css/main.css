@@ -379,6 +379,12 @@ section.hero {
   background: #FFF3E0;
 }
 
+@media (max-width: 768px) {
+  .menu {
+    background: rgba(255, 243, 224, 0.7);
+  }
+}
+
 .menu__container {
   text-align: center;
   max-width: 1200px;
@@ -763,6 +769,7 @@ section.hero {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  gap: calc(4px + 4 * ((100vw - 320px) / 960));
 }
 
 .footer__hours {
@@ -836,6 +843,7 @@ section.hero {
 
 .footer__bottom {
   margin-top: 32px;
+  margin-top: calc(5px + 15 * ((100vw - 320px) / 960));
   padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
@@ -904,17 +912,47 @@ section.hero {
 }
 
 .full-menu__categories {
-  display: flex;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
   margin-bottom: 32px;
-  overflow-x: auto;
-  padding-bottom: 8px;
+  padding: 8px;
+  background: rgba(230, 81, 0, 0.05);
+  border-radius: 8px;
+}
+
+@media (max-width: 540px) {
+  .full-menu__categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .full-menu__categories .full-menu__category:first-child {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (min-width: 768px) {
   .full-menu__categories {
-    justify-content: center;
-    overflow-x: visible;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .full-menu__categories {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .full-menu__categories .full-menu__category:first-child {
+    grid-column: auto;
+  }
+  .full-menu__categories .full-menu__category:nth-child(5) {
+    grid-column: 1;
+  }
+  .full-menu__categories .full-menu__category:nth-child(6) {
+    grid-column: 2;
+  }
+  .full-menu__categories .full-menu__category:nth-child(7) {
+    grid-column: 3;
   }
 }
 
@@ -926,6 +964,14 @@ section.hero {
   color: #E65100;
   border-radius: 20px;
   transition: all 0.3s ease;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .full-menu__category {
+    font-size: 1rem;
+  }
 }
 
 .full-menu__category:hover {

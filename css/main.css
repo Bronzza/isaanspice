@@ -381,7 +381,7 @@ section.hero {
 
 @media (max-width: 768px) {
   .menu {
-    background: rgba(255, 243, 224, 0.7);
+    background: rgba(255, 243, 224, 0.6);
   }
 }
 
@@ -889,14 +889,25 @@ section.hero {
 .full-menu__header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 32px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.full-menu__header-content {
+  flex: 1;
 }
 
 .full-menu__title {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   color: #E65100;
+  margin-bottom: 8px;
+}
+
+.full-menu__disclaimer {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 10px;
 }
 
 .full-menu__back {
@@ -905,6 +916,7 @@ section.hero {
   color: #FFFFFF;
   border-radius: 4px;
   transition: background 0.3s ease;
+  margin-left: 16px;
 }
 
 .full-menu__back:hover {
@@ -981,6 +993,12 @@ section.hero {
 .full-menu__category--active {
   background: #E65100;
   color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .full-menu__category:first-child {
+    grid-column: 1 / -1;
+  }
 }
 
 .full-menu__grid {

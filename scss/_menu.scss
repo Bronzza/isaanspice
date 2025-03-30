@@ -3,7 +3,7 @@
     @include adaptive-value(padding-bottom, 32, 16, 0);
     background: $color-secondary;
     @media (max-width: $breakpoint-tablet) {
-        background: rgba($color-secondary, 0.7);
+        background: rgba($color-secondary, 0.6);
     }
 
     &__container {

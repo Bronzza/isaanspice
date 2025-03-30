@@ -300,7 +300,7 @@ const fullMenuItems = [
         "title": "Sweet and Sour Chicken",
         "description": "Crispy chicken pieces coated in a tangy sweet and sour sauce.",
         "price": "130",
-        "image": "images/menu/sweet-sour-chicken.jpg",
+        "image": "images/menu/sweet-sour-chicken-1.jpg",
         "category": "Main Dishes"
     },
     {
